@@ -11,7 +11,7 @@ import fnmatch
 from sklearn.metrics import mean_absolute_error, f1_score
 
 # Define the main directory
-main_dir = r"C:\Users\Ronyt\EX3"
+main_dir = r"C:\Users\"
 
 # Load reference files
 cars_file = os.path.join(main_dir, "cars_final.xlsx")
@@ -100,7 +100,7 @@ for student_folder in os.listdir(main_dir):
 
 # Save results
 results_df = pd.DataFrame(results)
-results_file_path = os.path.join(main_dir, "results2.xlsx")
+results_file_path = os.path.join(main_dir, "results.xlsx")
 results_df.to_excel(results_file_path, index=False)
 
 print(f"Results saved to {results_file_path}")
